@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "name": "go",
+  "builds": [
+    { "src": "*.go", "use": "@vercel/go" },
+    { "src": "/health/*.go", "use": "@vercel/go" },
+    { "src": "/date/*.go", "use": "@vercel/go" }
+  ],
+  "routes": [
+    { "src": "/health", "dest": "/health" },
+    { "src": "/date", "dest": "/date" }
+  ]
+}
